@@ -1,10 +1,10 @@
 {
-  "name": "@org/kv-store-e2e",
+  "name": "@kvie/kv-store-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
     "implicitDependencies": [
-      "@org/kv-store"
+      "@kvie/kv-store"
     ],
     "targets": {
       "e2e": {
@@ -13,8 +13,8 @@
           "{projectRoot}/test-output/jest/coverage"
         ],
         "dependsOn": [
-          "@org/kv-store:build",
-          "@org/kv-store:serve"
+          "@kvie/kv-store:build",
+          "@kvie/kv-store:serve"
         ],
         "options": {
           "jestConfig": "apps/kv-store-e2e/jest.config.cts",

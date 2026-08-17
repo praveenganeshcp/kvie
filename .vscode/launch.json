@@ -4,9 +4,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug @org/kv-store with Nx",
+      "name": "Debug @kvie/kv-store with Nx",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["nx", "serve", "@org/kv-store"],
+      "runtimeArgs": ["nx", "serve", "@kvie/kv-store"],
       "env": {
         "NODE_OPTIONS": "--inspect=9229"
       },

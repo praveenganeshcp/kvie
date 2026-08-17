@@ -1,5 +1,5 @@
 {
-  "name": "@org/kv-store",
+  "name": "@kvie/kv-store",
   "version": "0.0.1",
   "private": true,
   "nx": {
@@ -63,15 +63,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@org/kv-store:build",
+          "buildTarget": "@kvie/kv-store:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@org/kv-store:build:development"
+            "buildTarget": "@kvie/kv-store:build:development"
           },
           "production": {
-            "buildTarget": "@org/kv-store:build:production"
+            "buildTarget": "@kvie/kv-store:build:production"
           }
         }
       },

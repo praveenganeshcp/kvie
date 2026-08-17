@@ -10,7 +10,7 @@ const swcJestConfig = JSON.parse(
 swcJestConfig.swcrc = false;
 
 module.exports = {
-  displayName: '@org/kv-store',
+  displayName: '@kvie/kv-store',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
