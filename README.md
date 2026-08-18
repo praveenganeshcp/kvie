@@ -19,7 +19,7 @@
 
 ## What This Is
 
-Kevi is a distributed key-value store implemented from first principles: a hand-rolled LSM-tree storage engine, a self-implemented Raft consensus protocol, gRPC/Protobuf for wire transport, and consistent-hash-based partitioning across multiple Raft groups — the same shape of system as etcd, TiKV, or CockroachDB's storage layer, minus a couple of decades of production hardening.
+Kvie is a distributed key-value store implemented from first principles: a hand-rolled LSM-tree storage engine, a self-implemented Raft consensus protocol, gRPC/Protobuf for wire transport, and consistent-hash-based partitioning across multiple Raft groups — the same shape of system as etcd, TiKV, or CockroachDB's storage layer, minus a couple of decades of production hardening.
 
 ## Why
 
@@ -68,7 +68,7 @@ Every week in the roadmap follows the same structure:
 - **Week 5 — SSTables & compaction**: SSTable writer/reader, background compaction. *Problem: read/write amplification.*
 - **Week 6 — Bloom filters & sparse indexes**: per-SSTable bloom filter, index blocks for binary search. *Problem solved: eliminates most unnecessary disk reads for missing keys.*
 
-*Optional shortcut: bind to RocksDB via the `rocksdb` npm package instead of hand-rolling the engine, trading storage-engine depth for more time in Raft. Kevi takes the hand-rolled path.*
+*Optional shortcut: bind to RocksDB via the `rocksdb` npm package instead of hand-rolling the engine, trading storage-engine depth for more time in Raft. Kvie takes the hand-rolled path.*
 
 </details>
 
